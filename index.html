@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no"/>
+        <title>Document</title>
+        <link href="./assets/bootstrap/bootstrap5.min.css" rel="stylesheet" type="text/css">
+        <link href="./assets/css/style.css" rel="stylesheet" type="text/css"> 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    
+    </head>
+    <body class="position-relative">
+
+        <!--animeC-->
+        <div id="premiereSection" class="bg-dark position-absolute text-white d-flex justify-content-center align-items-center">
+            <h3  class="fw-bold titreChargement">AGENCE PARADOXE</h3>
+            <div></div>
+        </div>
+
+        <div class="burger animeOpac">
+            <div class="position-relative d-flex justify-content-center align-items-center w-100 h-100 flex-column spanBurger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>                
+            
+    <!-- AffichageMenuBurger-->
+        <div id="menuBurgerDesktop" class="position-fixed row m-0">
+            <div id="burgerSectionGauche" class="bg-white col-12 col-md-6 d-flex flex-column justify-content-between pe-0">
+                <div class="childBurger">
+                    <nav class="d-flex flex-column">
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark">
+                                    <div>
+                                        <i class="fas fa-long-arrow-alt-right arrowBurger"></i>
+                                    </div>
+                                    <a class=" position-relative  text-dark" href="www.google.fr">Accueil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <i class="fas fa-long-arrow-alt-right arrowBurger"></i>
+                                    <a class=" text-dark" href="#">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class="  text-dark" href="#">Prestations</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class="  text-dark" href="#">Portefolio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-white w-100 position-relative" style="z-index: 3;">
+                                <div class="cd__digit w-100 ancreBurger d-flex text-dark" >
+                                    <div><i class="fas fa-long-arrow-alt-right arrowBurger"></i></div>
+                                    <a class=" text-dark" href="#">Histoire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="d-flex justify-content-between" id="adresseBurger">
+                    <div class="d-flex justify-content-end flex-column fw-bold">
+                        <div class="unit w-100">
+                            <div class="digits text-dark w-100 position-relative digitAdresse margeDigit">
+                                <div class="cd__digit w-100 " >
+                                    <p class="digitContact">06 52 57 65 67</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digits text-dark w-100 position-relative digitAdresse">
+                                <div class="cd__digit w-100 ">
+                                    <p class="digitContact">contact.paradoxe.fr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column reseauxBurger">
+                        <div class="unit w-100">
+                            <div class="digitsReseau text-dark w-100 m-0 position-relative" style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark" href="#" >
+                                        <i class="fab fa-twitter reseauAccueil" style="font-size:3.5vmin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100 ">
+                            <div class="digitsReseau text-dark w-100 position-relative" style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark"> <i class="fab fa-instagram reseauAccueil" style="font-size:3.5vmin;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unit w-100">
+                            <div class="digitsReseau text-dark w-100 position-relative " style="z-index: 1;">
+                                <div class="cd__digit w-100 ">
+                                    <a class="lienReseau text-dark"><i class="fab fa-linkedin-in reseauAccueil" style="font-size:3.5vmin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="burgerSectionDroite" class="p-0 col-6 d-md-flex flex-column d-none">
+                
+                    <div class="w-100  d-flex align-items-end" style="mix-blend-mode: multiply; background:rgb(0, 0, 0);height: 60%;">
+                        <h5 class="fw-bold titreSectionDroite text-white text-center w-100" style="font-size: 10vmin;">Agence <br> Paradoxe.</h5>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center flex-column text-white" style="height: 40%;background-color: black;">
+                        <p class="m-0" style="font-size: 2.5vmin;">Agence Paradoxe &copy; 2022 - Agence web sur Montauban et Toulouse </p>
+                        <div class="bg-white" style="height: 0.2vmin;width: 15vmin;margin: 2vmin 0;"></div>
+                        <div style="font-size: 1.5vmin;" class="mb-1">
+                            <a class="text-white" href="">CGU |</a>
+                            <a class="text-white" href="">Mention Légales |</a>
+                            <a class="text-white" href="">Politique-de-confidentialité</a>
+                        </div>
+                    </div>
+               
+            </div>
+        </div>
+
+        <section id="fond" class="d-flex justify-content-end position-relative active">
+            <!--animeC-->
+            <div id="carreBlanc" class="bg-white position-absolute">
+            </div>
+
+            <!--SECTION GAUCHE -->
+            <div id="sectionGauche" class="position-relative">
+                <div class="d-flex flex-column justify-content-between childSectionGauche">
+                    <nav class="d-none d-md-flex flex-md-column fw-bold mt-md-3 ms-md-3 navPc">
+                        <a class="lien" data-id="1" href="">Accueil</a>
+                        <a class="lien" data-id="2" href="">Contact</a>
+                        <a class="lien" data-id="3" href="">Prestations</a>
+                        <a class="lien" data-id="4" href="">Portefolio</a>
+                        <a class="lien" data-id="5" href="">Histoire</a>
+                    </nav>
+
+                    <div class="d-md-flex justify-content-end d-none">
+                        <div class="cd__unit w-100">
+                            <div class="cd__digits text-white w-100">
+                                <div class="cd__digit arret w-100 text-end" data-col>
+                                    <div class="arret prev motPrev titrePrincipal mot" data-pos="prev">AGENCE</div>
+                                    <div class="arret next motNext titrePrincipal" data-pos="next">AGENCE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--RESPONSIVE-->
+                <div class="d-sm-none text-white ms-3 blResponsive">
+                <h1 class="fw-bold hResponsive">Agence <br> PARADOXE</h1>
+                <p class="pResponsive">Agence web sur <span class="fw-bold">Montauban</span> <br> et <span class="fw-bold">Toulouse</span></p>
+            </div>
+            <div class="d-sm-none text-white ms-1 d-flex align-items-center bl2Responsive">
+                    <div class="w-75 d-flex justify-content-center align-items-center">
+                        <div class="bg-white child2Respon"></div>
+                    </div>
+                    <div class="w-25 d-flex flex-column align-items-end pe-3 reseauRespon">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram instaRes"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+            </div>
+            
+            <!----------------------------------------------------------->
+            <div class="w-100 d-sm-flex justify-content-end align-items-end position-relative animeOpacBas d-none">
+                <div class="cd__unit">
+                        <div class="cd__digits text-white ms-1">
+                            <div class="cd__digit" data-col>
+                                <div data-pos="prev">0</div>
+                            </div>
+                            <div class="cd__digit arret" data-col>
+                                <div class="arret prev nombrePrev" data-pos="prev">0</div>
+                                <div class="arret next nombreNext" data-pos="next">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="barreHorizontal" class="position-absolute animeOpac d-none d-md-block"></div>
+                <div id="barreVertical" class="position-absolute animeOpac d-none d-md-block"></div>
+
+            </div>
+
+            <!--animeC-->
+            <div class="position-relative ">
+                <p id="text" class=" mb-0 fw-bold mb-0 position-absolute mot titrePrincipal prums">PARADOXE.</p>
+            </div>
+
+            <!-- SECTION DROITE -->
+            <div id="sectionDroite" class="d-md-flex flex-column d-none">
+                <div class="blend-mode  d-flex flex-column justify-content-between premiereSectionDroite" >
+                    <div id="divBurgerDesktop" class="d-flex justify-content-end animeOpac"></div>
+                    <div class="seconds">
+                        <p id="text" class=" mb-0 fw-bold mb-0">PARADOXE.</p>
+                    </div>
+                </div>
+                
+                <div id="autre" class="premiereSectionDroite">
+                    <div class="position-relative animeOpac inde">
+                        <div class="position-absolute d-flex flex-column childAutre">
+                            <a href="" class="text-dark lienReseau"><i class="fab fa-twitter reseauAccueil"></i></a>
+                            <a href="" class="text-dark lienReseau" style="margin: 2vmin 0"><i class="fab fa-instagram reseauAccueil"></i></a>
+                            <a href="" class="text-dark lienReseau"><i class="fab fa-linkedin-in reseauAccueil"></i></a>
+                        </div>
+                    </div>
+                    <div class="blP animeOpac">
+                        <p>Agence web sur <strong>Montauban</strong> <br> et <strong>Toulouse.</strong></p>
+                    </div>
+                    <div class="d-flex justify-content-center p-0 w-100 ms-0 animeOpac">
+                        <div class=" p-0 w-75">
+                            <p class="border-start border-dark border-3 ps-2 m-0 autrePresente">
+                                Agence web spécialisée dans la création de sites vitrines,
+                                sites e-commerce et création d'univers graphique l'agence
+                                web paradoxe vous accompagne pour développer votre présence
+                                sur internet de manière efficace et vous permettre d'accroitre
+                                votre activité.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-end m-0 animeOpacBas stylOpac">
+                        <div class="barreVerDroite"></div>
+                        <p class=" fw-bold text-center mt-1 m-0">scroll</p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        <section id="maquettePeinture" class="row justify-content-center align-items-center m-0" >
+            <div class="position-relative col-7">
+                <div class="childMaquette">
+                    <img id="imagePath" class="position-absolute"  src="assets/img/271063913_2990148361298772_7829614479415887927_n.png">
+                    <svg id="animePath" viewBox="0 0 4600 3126" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                        <path id="path" d="M1281.709814,753.513866c196.847057-712.530074,1294.98992-637.077913,2003.075143-71.544595c209.221246,167.10077,379.777699,166.137335,573.927853,206.828581c283.368009,59.390101,459.372103,671.322184,195.358557,1320.618561-96.905424,238.322396-549.436412,199.270151-941.890516,140.371678-209.242604-31.402576-467.0676-110.621963-675.002779,7.250299-230.683163,130.767417-458.714674,138.018808-594.745745,114.377299-920.604749-159.99643-765.316544-975.84275-560.722513-1717.901823Z" transform="translate(.000001 0)"  stroke="white" stroke-width="12"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="d-flex flex-column justify-content-center align-items-center mx-auto presenteMaquette">
+                    <h1 id="titleMaquette" class="fw-bold text-white m-0" >Votre Agence !</h1>
+                    <p class=" text-white m-0 text-center paraMaquette">L'Agence Paradoxe c'est une équipe de passionnés spécialistes dans la création de contenus web. Que ce soit la création de sites vitrines ou marchands mais aussi la création de contenues graphiques notre équipe s'investit dans chaque projet pour vous fournir la meilleure prédation possible et ainsi propulser votre site web. Nous stimulons la croissance de votre entreprise en rendant votre site web plus attrayant.</p>
+                    <div class="d-flex justify-content-center align-items-center ms-5">
+                        <a id="decouvrirAgence" class=' border border-white text-white' href='https://google.com'>Découvrir</a>
+                        <iframe src="https://giphy.com/embed/U1gv0Ak2rI25bzMRrI" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Creation-->
+        <section class="m-0" id="create">
+            <div class="d-flex h-100" style="background-color: #E6E6E6;">
+                <div class="col-8" style="background-color: #E6E6E6;">
+                    <div style="width: 55%;margin-top: 5vmin;margin-left: 20vmin;">
+                        <div>
+                            <h3 class="fw-bold">Nos Prestations</h3>
+                            <div class="bg-dark" style="height: 0.5vmin;width: 38vmin;"></div>
+                        </div>
+    
+                        <div class="position-relative d-flex" style="overflow: hidden;height: 32vmin!important;margin-top: 10vmin;">
+                            
+                            <span class="fw-bold " style="font-size: 35vmin;text-shadow: 1vmin 1vmin 2vmin rgb(0, 0, 0);padding-left: 5vmin;color: #E6E6E6;margin-top:-10vmin ;">0</span>
+                            <div id="sliderCreation" class="d-inline-flex flex-column" style="margin-top:-10vmin ;"> 
+                                <span id="numberCreation" class="fw-bold firstBoxNumber" style="font-size: 35vmin;text-shadow: 0vmin 1vmin 1.5vmin rgb(0, 0, 0);color: #E6E6E6;">5</span>
+                                <span id="numberCreation" class="fw-bold " style="font-size: 35vmin;text-shadow: 0vmin 1vmin 1.5vmin rgb(0, 0, 0);color: #E6E6E6;">1</span>
+                                <span id="numberCreation" class="fw-bold " style="font-size: 35vmin;text-shadow: 0vmin 1vmin 1.5vmin rgb(0, 0, 0);color: #E6E6E6;">2</span>
+                                <span id="numberCreation" class="fw-bold " style="font-size: 35vmin;text-shadow: 0vmin 1vmin 1.5vmin rgb(0, 0, 0);color: #E6E6E6;">3</span>
+                                <span id="numberCreation" class="fw-bold " style="font-size: 35vmin;text-shadow: 0vmin 1vmin 1.5vmin rgb(0, 0, 0);color: #E6E6E6;">4</span>
+                                <span id="numberCreation" class="fw-bold " style="font-size: 35vmin;text-shadow: 0vmin 1vmin 1.5vmin rgb(0, 0, 0);color: #E6E6E6;">5</span>
+                                <span id="numberCreation" class="fw-bold lastBoxNumber" style="font-size: 35vmin;text-shadow: 0vmin 1vmin 1.5vmin rgb(0, 0, 0);color: #E6E6E6;">1</span>
+                            </div>
+                              
+                            <p id="titreCreation" class="position-absolute fw-bold" style="font-size: 10vmin;top:40%;">Site vitrine</p>
+                        </div>
+                        <div style="margin-top: 1vmin;">
+                            <p id="paraCreation" style="font-size: 2vmin;margin-bottom: 4vmin;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nobis rerum recusandae repellendus, cum, nisi eaque consequuntur atque qui quis quisquam modi laboriosam dolores rem molestias nostrum aut dolorem quia!
+                            Numquam perferendis neque nam accusantium vero, ipsam doloremque laboriosam. Earum voluptate aut, necessitatibus nostrum labore minus consequuntur similique molestias autem! Laudantium maxime voluptatibus reiciendis vel laboriosam 
+                          </p>
+                            <a class="bg-dark rounded text-white " style="padding: 0.8vmin 7vmin;font-size: 3vmin;">Découvrir</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-4 position-relative" id="prestaDroite" style="background-color: #1A1A1A;">
+                    <div id="containerSliderC" class="position-absolute" style="height: 65vmin;width: 50vmin;left: -37%;top: 16%;overflow: hidden;">
+                        <div id="sliderCreation">
+                            <img id="imgCreation" data-slide="5" class="firstBox"   style="width: 100%;height: 66vh;" src="./assets/img/optimisation.jpg">
+                            <img id="imgCreation" data-slide="1"  class="lastBox"  style="width: 100%;height: 66vh;" src="./assets/img/site_vitrine.jpg">
+                            <img id="imgCreation" data-slide="2"  style="width: 100%;height: 66vh;" src="./assets/img/e-commerce.jpg">
+                            <img id="imgCreation" data-slide="3"  style="width: 100%;height: 66vh;" src="./assets/img/creation_graphique.jpg">
+                            <img id="imgCreation" data-slide="4"  style="width: 100%;height: 66vh;" src="./assets/img/refonte.jpg">
+                            <img id="imgCreation" data-slide="5"   style="width: 100%;height: 66vh;" src="./assets/img/optimisation.jpg">
+                            <img id="imgCreation" data-slide="1"  class="lastBox"  style="width: 100%;height: 66vh;" src="./assets/img/site_vitrine.jpg">
+                        </div>
+                    </div>
+                   
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100" style="padding-left: 6vmin;">
+                        <div>
+                            <button id="upLong"><i class="prev fa-solid fa-up-long " style="font-size:8vmin;color: white;"></i></button>
+                        </div>
+                        <div class="d-flex flex-column align-items-start" style="font-size: 2.5vmin;padding: 5vmin 0;margin-left: 21vmin;">
+                            <button  class="btnPresta" data-position="1" style="color:white">01. Site vitrine</button>
+                            <button class="btnPresta" data-position="2" style="color: darkgray;">02. E-commerce</button>
+                            <button class="btnPresta" data-position="3" style="color: darkgray;">03. Graphique</button>
+                            <button class="btnPresta" data-position="4" style="color: darkgray;">04. Refonte</button>
+                            <button class="btnPresta" data-position="5" style="color: darkgray;">05. Optimisation</button>
+                        </div>
+                        <div>
+                            <button id="downLong"><i class="nexte fa-solid fa-down-long" style="font-size:8vmin;color:white"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="horizontalScroll" class="horizontal-section container-fluid">
+            <div class="sticky-wrapper" >
+                <div>
+                    <div class="element-wrapper p-0">
+                        <div class="elementPresentation bg-white">
+                            <h1 class="fw-bold m-0 titleHorizontal">Les étapes <br> de création</h1>
+                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis suscipit eos harum ut aliquid a quisquam quis repellat, quas deserunt ratione fuga nobis, cum voluptatem omnis sint quam consectetur iste!
+                            Quo, tenetur officia velit error debitis magnam nulla corporis voluptate, soluta sequi sunt aspernatur vel modi praesentium sed deleniti, obcaecati voluptatibus. Ea accusamus sed nulla autem sequi debitis blanditiis dolor!
+                            Neque unde labore sit, dolorum quo culpa eligendi recusandae a est nihil porro ratione hic blanditiis magnam praesentium obcaecati perspiciatis eos asperiores totam adipisci impedit? Adipisci, animi. Labore, beatae harum?
+                            Nobis ab doloribus amet iusto ipsa possimus nesciunt quam debitis? Repellendus, doloribus laboriosam repudiandae inventore provident sint, reprehenderit consectetur, quos molestias error esse mollitia modi quasi unde a quaerat itaque?
+                            Quisquam possimus velit iusto, iure accusantium fuga</p>
+                            <a class="bg-dark text-white py-1 fw-bold rounded-3 px-4">Découvrir</a>
+                        </div>
+                        <div class="element position-relative">
+                            <div class=" text-white m-0 h-100 d-flex flex-column justify-content-center align-items-center  blElement" >
+                                <div class="bl2Element ">
+                                    <div class="d-flex justify-content-center" >
+                                        <svg id="Calque_1" data-name="Calque 1" style="width: 35%;margin-top: 5vmin;" viewBox="0 0 409.58 409.73"><defs><style>.cls-1{fill:#fff;}</style></defs><title>premier rdv</title>
+                                            <path class="cls-1" d="M92.85,369.68c3-6.61,8-8.9,15.29-8.89q153.77.22,307.53.1c10.56,0,14.8,4.23,14.76,14.7,0,2.92,0,5.83,0,9.3h5.2c10.14,0,20.27-.07,30.4,0,20.86.18,36.49,16.09,36.4,36.95-.23,50.88-37.83,96.21-87.58,105-8.6,1.52-17.49,1.32-26.24,2-1.34.1-3.14.36-3.86,1.25-6.18,7.61-12.16,15.37-18.55,23.53h4.12c15.6,0,31.19,0,46.79,0,11,0,16.62,9,11.43,18.58-16.54,30.41-42,48.11-76.37,52.63a87.26,87.26,0,0,1-11.55.72c-52.65,0-105.31.44-158-.1C143.56,625.12,114.4,607,95.12,573c-.77-1.36-1.52-2.73-2.27-4.09v-6.4c3.06-6.83,8.35-9.12,15.72-8.9,13.45.39,26.91.11,40.37.11h8.45c-.78-1.08-1.09-1.62-1.5-2.07-36-40.06-53.74-88-60.63-140.61-.93-7.09-1.61-14.22-2.41-21.33Zm313.39,15.46H117.5c0,1.12,0,1.92,0,2.71a260.31,260.31,0,0,0,17.77,83.91c12.22,31.06,29.51,58.7,55.93,79.85a8.73,8.73,0,0,0,4.91,2q65.56.15,131.14,0a6.29,6.29,0,0,0,4-1.31c8-7.6,16.73-14.65,23.65-23.15C388.83,487.39,402.69,438.26,406.24,385.14ZM395.15,577.92H128.28c.8.9,1.2,1.4,1.65,1.85,15,14.77,33.17,21.84,54,21.89q77.75.15,155.51,0a75.8,75.8,0,0,0,30-5.84A73.79,73.79,0,0,0,395.15,577.92ZM400,505c6.47-1.26,12.17-1.88,17.57-3.5,35.94-10.76,59.44-41.34,60.87-78.83.3-8.1-4.64-13.63-12.67-13.74-11.46-.14-22.93,0-34.39-.09-2.45,0-3.09.89-3.37,3.19a279.93,279.93,0,0,1-21.06,77.87C404.84,494.59,402.6,499.23,400,505Z" transform="translate(-92.85 -216.08)"/>
+                                            <path class="cls-1" d="M336.85,216.08c4.47,2.19,8.57,5.14,8.54,10.47a17.46,17.46,0,0,1-3.2,9.82c-8.77,11.51-8.68,21.47,1,32.24,16.38,18.23,16.57,44.73.46,62.44-5.39,5.93-12.67,6.73-18,2s-5.3-11.67-.26-17.8c8.7-10.56,8.24-21.06-1.37-31.83-15.9-17.83-16.48-43.58-1.19-61.19,2.11-2.43,5.07-4.11,7.64-6.14Z" transform="translate(-92.85 -216.08)"/>
+                                            <path class="cls-1" d="M264.85,216.08c4.47,2.19,8.57,5.14,8.54,10.47a17.46,17.46,0,0,1-3.2,9.82c-8.75,11.48-8.65,21.5,1,32.24,16.37,18.23,16.56,44.73.45,62.44-5.39,5.92-12.68,6.73-18,2s-5.3-11.67-.26-17.8c8.7-10.56,8.24-21.06-1.37-31.83-15.89-17.82-16.47-43.59-1.19-61.19,2.11-2.43,5.07-4.11,7.64-6.14Z" transform="translate(-92.85 -216.08)"/>
+                                            <path class="cls-1" d="M192.85,216.08a5.08,5.08,0,0,0,.91.71c8.68,4.26,10.46,12.48,4.32,20-7.17,8.76-8.26,18.33-2.86,26.84a51.83,51.83,0,0,0,5,6.17,46.08,46.08,0,0,1-.61,61.25c-5.38,5.92-12.69,6.73-18,2s-5.31-11.7-.27-17.8c8.62-10.41,8.25-21.07-1.09-31.53-15.59-17.46-16.91-41.71-2.94-59.61,2.44-3.13,6-5.37,9.11-8Z" transform="translate(-92.85 -216.08)"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="fw-bold">Premier contact</h6>
+                                    <p class="m-0">Venez nous parler de vos objectifs lors d'un premier rendez-vous.
+                                        Nous établieront une stratégie pour mener votre projet
+                                        à bien et vous guidez le mieux possible pour maximiser
+                                        vos résultats.</p>
+                                </div>
+                            </div>
+                            <div class="position-absolute elementCache"></div>
+                        </div>
+                        <div class="element">
+                            <div class=" text-white m-0 h-100 d-flex flex-column justify-content-center align-items-center  blElement">
+                                <div class="bl2Element ">
+                                    <div class="d-flex justify-content-center" >
+                                        <svg id="Calque_1" data-name="Calque 1" style="width: 35%;margin-top: 5vmin;" viewBox="0 0 423.99 374.24"><defs><style>.cls-1{fill:#fff;}</style></defs><title>maquette</title>
+                                            <path class="cls-1" d="M114.58,608.07c-7.78-2-15.3-4.22-20.71-9-5-4.45-7.77-9.41-8.18-15,0-.61,0-1.22,0-1.83q0-161.14,0-322.3c0-10.73,6.52-18.93,20.3-23.46a59.91,59.91,0,0,1,18-2.46q160.07-.23,320.14-.11c9.48,0,19,0,28.45,0,21.42.06,36.34,10.32,37.09,25.49,0,.73,0,1.46,0,2.2q0,159.5,0,319c0,11.15-5.87,19.86-20.35,25.07-2.72,1-5.65,1.64-8.48,2.46Zm377-187.1q0-80,0-160c0-9.88-6.71-14.65-20.5-14.65h-347c-13.72,0-20.75,4.93-20.76,14.6q0,160,0,320.07c0,9.71,7,14.66,20.69,14.66q173.49,0,347,0a45.33,45.33,0,0,0,7.66-.62c7-1.2,12-5.27,12.65-10.32a38.48,38.48,0,0,0,.27-5.47Q491.59,500.07,491.58,421Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M297.45,339.83h164c10,0,12.92,2.05,12.92,9.11q0,40.76,0,81.5c0,7.2-3.07,9.36-13.23,9.36H134.21c-10.41,0-13.35-2-13.35-9.23q0-40.93,0-81.86c0-6.91,2.82-8.89,12.64-8.89Zm-25.69,49.93L139,355.22V424.3ZM456,355.24,323.36,389.77,456,424.28ZM182.69,352.4l-.31.44c1.05.33,2.07.7,3.13,1Q239.93,368,294.39,382.15a14.88,14.88,0,0,0,6.8-.09Q355,368.2,408.62,354.12c1.32-.35,2.55-.86,5.08-1.72Zm.88,73.89.19.42H412.58c-1.84-.66-2.53-1-3.3-1.18q-54.18-14.08-108.43-28.06a17.22,17.22,0,0,0-7.81.23q-52.55,13.53-105,27.29C186.54,425.38,185.06,425.85,183.57,426.29Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M297.38,327.37H133.51c-9.85,0-12.64-1.95-12.65-8.83q0-22.47,0-44.93c0-6.47,2.92-8.66,12-8.66q164.66,0,329.3,0c9.18,0,12.21,2.26,12.22,8.91q0,22.27,0,44.56c0,6.88-2.94,9-12.55,9ZM138.92,314.7H455.83V277.82H138.92Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M420.77,527c-14,0-27.92,0-41.88,0-7.46,0-10.77-2.3-10.78-7.52q-.08-30,0-59.9c0-4.86,3.15-7.37,10-7.4q42.9-.17,85.81,0c7,0,10.35,2.52,10.38,7.57q.16,29.77,0,59.54c0,5.46-3.43,7.71-11.13,7.73C449,527,434.9,527,420.77,527Zm.75-27.05-20.34,14.43h41.05Zm-35.45,4.19,20.22-14.15-20.22-14.48ZM442.66,465H401.18l20.65,14.66Zm13.24,10.23-20.45,14.37,20.45,14.69Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M174.06,527c-14.13,0-28.26,0-42.39,0-7.4,0-10.77-2.33-10.79-7.54q-.09-29.77,0-59.54c0-5.28,3.17-7.73,10.58-7.76q42.39-.14,84.78,0c7.62,0,10.86,2.49,10.88,8q.09,29.4,0,58.81c0,5.85-3.3,8.06-11.7,8.07Q194.75,527,174.06,527ZM139,474.73V504l20.67-14.66Zm56.58,39.63-21-14.79L153.5,514.36Zm-.38-49.3h-42l21,14.75Zm13.46,39.12V475.35l-20.26,14.22Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M297.7,527q-20.93,0-41.87,0c-8,0-11.26-2.05-11.29-7.53q-.19-29.94,0-59.89c0-5.13,3.25-7.41,10.48-7.43q42.64-.14,85.29,0c7.17,0,10.15,2.44,10.16,7.58q.06,29.94,0,59.89c0,5.1-3.18,7.34-10.37,7.36C326,527,311.83,527,297.7,527Zm20.82-12.59L298,499.76l-20.72,14.6Zm-6.89-25.06,20.9,14.76V474.49Zm-28.41.82-20.37-14.37v28.71Zm14.17-10.59,21.05-14.59H276.78Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M368.3,577V564.53h106a81.09,81.09,0,0,1-.2,10.47c-.1.74-2.74,1.85-4.23,1.87-14.11.14-28.23.09-42.34.09H368.3Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M226.87,539.66v12H121.28v-12Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M474.08,539.69v12H368.37v-12Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M226.82,576.73H121.15V564.49H226.82Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M244.85,539.59H350.08v12H244.85Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M244.8,576.66V564.5H350.11v12.16Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M209.08,302.31H156.41v-12h52.67Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M279.88,290.17v12h-52.8v-12Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M350.28,290.24v12H298v-12Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M368.36,302.3V290.18h52.52V302.3Z" transform="translate(-85.64 -233.82)"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="fw-bold">Maquette</h6>
+                                    <p class="m-0">Une fois vos objectifs définis notre équipe se charge
+                                        de réaliser une maquette de votre site web, celle-ci
+                                        vous permettra de vous projeter et discuter d'éventuel
+                                        retouche.</p>
+                                </div>
+                            </div>
+                            <div class="position-absolute elementCache"></div>
+                        </div>
+                        <div class="element">
+                            <div class=" text-white m-0 h-100 d-flex flex-column justify-content-center align-items-center blElement">
+                                <div class="bl2Element ">
+                                    <div class="d-flex justify-content-center">
+                                        <svg id="Calque_1" data-name="Calque 1" style="width: 35%;margin-top: 5vmin;" viewBox="0 0 423.99 374.24"><defs><style>.cls-1{fill:#fff;}</style></defs><title>intÃ©gration</title>
+                                            <path class="cls-1" d="M509.63,274.36V567.51a7,7,0,0,0-.7,1.46C504.06,592.79,485.68,608,461.56,608q-163.93,0-327.87,0c-27.59,0-48-20.53-48-48.14q0-138.88,0-277.78c0-27.77,20.49-48.2,48.37-48.27,16,0,32,0,48,0h279c16.91,0,30.78,6.49,40.12,20.6C505.12,260.35,506.89,267.68,509.63,274.36Zm-409.95,72V350q0,104.73.06,209.47a37.58,37.58,0,0,0,1.37,10.18C105.49,585.16,118,594,135.26,594q162.28,0,324.56,0a42.57,42.57,0,0,0,11-1.29c15.52-4.21,24.72-16.73,24.72-33.47q0-104.52,0-209c0-1.2-.14-2.41-.23-3.78Zm395.65-14.61c.11-1,.24-1.68.24-2.34,0-16.15.07-32.29-.06-48.44a32.65,32.65,0,0,0-1.28-8.55c-4.42-15.65-16.93-24.52-34.51-24.52q-162.08,0-324.16.05a42.46,42.46,0,0,0-11,1.28c-15.47,4.19-24.73,16.59-24.83,33-.09,15.32,0,30.64,0,45.95,0,1.17.18,2.35.28,3.6Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M316.62,396c-1.92,9.18-4,19.28-6.15,29.37q-10.58,50.26-21.18,100.53c-.23,1.08-.46,2.16-.77,3.21-1.2,4.19-4.67,6.68-8.17,5.89-4.08-.9-6.47-4.74-5.55-9.18,1.78-8.62,3.66-17.22,5.48-25.84q11.16-52.87,22.33-105.77c1-4.81,3.43-7.12,7.19-7.13C314.1,387,316.84,390.2,316.62,396Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M218.61,460.55l28.83,24.56c3.15,2.68,6.37,5.29,9.43,8.08,3.47,3.18,4,7.24,1.45,10.27-2.73,3.3-6.84,3.57-10.62.38q-22-18.55-43.82-37.29c-4.47-3.85-4.49-8.17,0-12q21.78-18.8,43.78-37.34c3.72-3.14,8.06-2.85,10.67.29s2,7.38-1.68,10.57c-11.41,9.8-22.89,19.51-34.34,29.26C221.14,458.29,220,459.29,218.61,460.55Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M376.72,460.5l-36.67-31.26a28.27,28.27,0,0,1-2.19-1.89c-3-3.05-3.24-7.17-.71-10a7,7,0,0,1,9.69-.68c3.93,3,7.64,6.35,11.42,9.57,10.72,9.12,21.45,18.22,32.12,27.4,5.85,5,5.78,8.94-.1,13.95-14,11.9-27.91,23.83-42,35.59-1.77,1.48-4.51,3-6.52,2.65a8.31,8.31,0,0,1-5.68-4.43c-.72-2,.06-5.37,1.47-7.05,2.8-3.34,6.47-6,9.83-8.83C357,477.25,366.68,469.05,376.72,460.5Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M159.31,290.16a22.32,22.32,0,0,1-22,22.22C125.13,312.45,114.71,302,115,290s10.37-22.14,22.33-22.05A22.41,22.41,0,0,1,159.31,290.16Zm-22-7.94a7.77,7.77,0,0,0-8,7.74,8,8,0,0,0,8,8.27,8.5,8.5,0,0,0,7.95-8.06A8.16,8.16,0,0,0,137.28,282.22Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M227.32,290.23a22.09,22.09,0,1,1-22.12-22A21.95,21.95,0,0,1,227.32,290.23Zm-30-.25a7.93,7.93,0,0,0,7.79,8.41,8.21,8.21,0,0,0,8.07-7.81,7.89,7.89,0,0,0-7.67-8.08A7.73,7.73,0,0,0,197.35,290Z" transform="translate(-85.64 -233.82)"/>
+                                            <path class="cls-1" d="M273.54,268.51a22.1,22.1,0,1,1-22.31,21.73A22.08,22.08,0,0,1,273.54,268.51Zm7.66,22.1a8,8,0,0,0-7.78-8,8.22,8.22,0,0,0-8.11,8.17,7.93,7.93,0,0,0,8.07,7.71A7.76,7.76,0,0,0,281.2,290.61Z" transform="translate(-85.64 -233.82)"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="fw-bold">Développement</h6>
+                                    <p class="m-0">Durant cette étape notre équipe se charge de réaliser 
+                                        votre site web.</p>
+                                </div>
+                            </div>
+                            <div class="position-absolute elementCache"></div>
+                        </div>
+                        <div class="element">
+                            <div class=" text-white m-0 h-100 d-flex flex-column justify-content-center align-items-center blElement">
+                                <div class="bl2Element ">
+                                    <div class="d-flex justify-content-center">
+                                         <svg id="Calque_1" data-name="Calque 1" style="width: 35%;margin-top: 5vmin;" viewBox="0 0 384.16 349.42"><defs><style>.cls-1{fill:#fff;}</style></defs><title>dÃ©ploiement</title>
+                                            <path class="cls-1" d="M105.56,431.44c1.86-2.56,4-4.6,7.5-3.31s3.87,4.16,3.76,7.36,0,6.68,0,10.2H478.32v-4.34q0-66.37,0-132.73a12.65,12.65,0,0,1,.6-4.74c1.09-2.63,3.58-4,6.09-2.89,1.83.81,3.2,3,4.4,4.79.52.79.11,2.19.11,3.32,0,54.49-.3,109,.18,163.47.15,17.69-12.78,36.72-36.54,36.59-34.12-.2-68.24-.05-102.36-.05h-5.09v44.48c7.63,0,15.22-.19,22.79,0,8.7.29,14.87,4.77,18.36,12.63,6.17,13.9-4.14,29.31-19.63,29.34q-65.81.09-131.61,0c-6.12,0-12.24.07-18.37,0a21.29,21.29,0,0,1-20.8-19.33c-1.05-9.95,6.11-19.85,16.26-22.21a30.47,30.47,0,0,1,6.7-.51c6.6-.06,13.21,0,20.1,0V509.11h-4.68q-46.31,0-92.61,0c-15.74,0-27.31-6.8-34-21.26a80.48,80.48,0,0,1-2.68-7.65Zm11.4,26.1c0,6.69-.53,13.1.11,19.38,1.31,13,12.64,20.8,24.63,20.78q155.78-.31,311.55-.13c1,0,2,0,3,0,9.84-.32,19.37-7.48,21.06-17.16,1.28-7.4,1-15.07,1.37-22.83Zm216.85,51.88H251.36v44.12h4.78c7.87,0,15.74,0,23.61.06a5.51,5.51,0,0,1,5.74,5.23,5.75,5.75,0,0,1-5.44,6,31.54,31.54,0,0,1-3.37,0q-28.68,0-57.35,0a16,16,0,0,0-4.43.42A9.36,9.36,0,0,0,208.08,576c.71,5.12,4.65,8.32,10.72,8.32q73.84.06,147.69,0a13.47,13.47,0,0,0,5.41-1.18A9.43,9.43,0,0,0,377,572.43c-.91-4.4-4.89-7.52-9.88-7.53q-29.43-.06-58.86,0a27,27,0,0,1-3.37-.07,5.53,5.53,0,0,1-5.16-5.8c.06-3.14,2.09-5.24,5.48-5.4,3-.15,6-.06,9-.07h19.58Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M105.56,275.44c1.88-6.35,4-12.53,8.69-17.54,7-7.55,15.57-11.63,25.85-11.63q157.49-.06,315,0c18.61,0,34.26,15.21,34.45,33.11.05,4.32-2,7-5.45,7.11-3.26.1-5.46-2.37-5.77-6.46-1-13.18-10.65-22.33-23.95-22.43-15.12-.11-30.25,0-45.37,0H143.12c-17,0-26.33,9.36-26.33,26.48,0,40.75-.07,81.5.1,122.25,0,4.79-3,8.19-7.17,7-1.54-.44-2.78-1.87-4.16-2.85Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M152.32,332.37H260.6L206.48,285,190,299.37c-3.42,3-6.93,3.16-9.22.52s-1.83-5.84,1.78-9q9.44-8.3,18.9-16.54c4-3.46,6-3.45,10.07.11q33.47,29.22,66.91,58.46c2.23,1.94,3.76,4.06,2.61,7.16s-3.65,3.77-6.64,3.68-6.2,0-9.82,0v4.64q0,36.38,0,72.75c0,6.61-1.49,8.06-8.19,8.06H156.29c-6.41,0-8-1.56-8-7.88q0-36.57,0-73.12v-4.45c-3.83,0-7.36.4-10.73-.15a9.09,9.09,0,0,1-5.55-3.4c-1.56-2.28-.37-4.8,1.71-6.62,9.31-8.15,18.61-16.32,28-24.41,2.88-2.49,6.15-2.35,8.35.09s2,5.83-1.05,8.55C163.71,322.48,158.35,327.09,152.32,332.37Zm32.77,85.44v-4.38q0-22.31,0-44.6c0-5.3,1.88-7.15,7.23-7.17q14.05,0,28.11,0c5.57,0,7.33,1.79,7.33,7.42q0,22.29,0,44.6v3.94h25.33V344H159.86v73.85Zm11.51-44.72v44.5h19.7v-44.5Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M328.37,316a22,22,0,0,1-22.19-22,22.17,22.17,0,1,1,22.19,22ZM317.7,294.11a10.64,10.64,0,1,0,10.45-10.93A10.68,10.68,0,0,0,317.7,294.11Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M328.34,385a22.1,22.1,0,1,1-22.16,22.09A22.2,22.2,0,0,1,328.34,385ZM317.69,406.9a10.64,10.64,0,1,0,10.8-10.63A10.79,10.79,0,0,0,317.69,406.9Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M306.2,350a22.09,22.09,0,0,1,22.64-21.58c12.29.4,22.15,10.68,21.66,22.61-.51,12.29-10.8,22.13-22.68,21.68C315.55,372.23,305.77,362,306.2,350Zm32.77.63a10.64,10.64,0,1,0-10.76,10.52A10.49,10.49,0,0,0,339,350.62Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M410.81,402.79c-12.74,0-25.48.1-38.22-.1a9.69,9.69,0,0,1-6-2.21c-2.89-2.69-1.47-7.46,2.34-8.74a14.49,14.49,0,0,1,4.42-.54q37.29,0,74.57,0c.38,0,.75,0,1.13,0,4.51.12,7.33,2.36,7.32,5.8s-2.86,5.78-7.33,5.79C436.29,402.82,423.55,402.79,410.81,402.79Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M410.83,346q-19.29,0-38.59,0c-4.56,0-7.23-2.24-7.11-5.78s2.68-5.49,7.08-5.5q38.58,0,77.18,0c4.26,0,7,2.26,7,5.66s-2.63,5.6-6.95,5.61C436.56,346,423.69,346,410.83,346Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M411,289.61c-13,0-26,0-39,0-3.38,0-5.88-1.2-6.81-4.61a5.48,5.48,0,0,1,4.14-6.54,15.71,15.71,0,0,1,3.36-.24h76.05c.62,0,1.25,0,1.87,0,3.28.29,5.55,2.45,5.67,5.37a5.93,5.93,0,0,1-5.61,5.91,44.84,44.84,0,0,1-4.49.06Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M402.85,309.79H371.78c-3,0-5.77-1.12-6.24-4.2-.28-1.86.73-4.28,1.92-5.89.75-1,2.9-1.37,4.43-1.37q31.08-.13,62.15,0c4,0,6.59,2.33,6.67,5.59.08,3.41-2.62,5.86-6.78,5.88C423.57,309.83,413.21,309.79,402.85,309.79Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M403.33,411.37c9.74,0,19.47,0,29.2,0a15.32,15.32,0,0,1,4.06.43c2.73.77,4.55,2.92,3.93,5.52-.46,1.94-2.41,3.73-4.09,5.09-.89.71-2.64.49-4,.49q-29.58,0-59.15,0c-.5,0-1,0-1.5,0-4.07-.23-6.58-2.35-6.66-5.64-.08-3.46,2.53-5.86,6.76-5.89C382.37,411.33,392.85,411.38,403.33,411.37Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M402.9,355h30.69c4.52,0,7.24,2.25,7.12,5.8s-2.69,5.41-7.09,5.42H372.23c-4.56,0-7.22-2.19-7.1-5.77s2.68-5.44,7.07-5.45Z" transform="translate(-105.56 -246.23)"/>
+                                            <path class="cls-1" d="M292.87,471.91c5.24,0,10.47-.05,15.7,0,3.78.05,6.16,2.24,6.19,5.5s-2.36,5.68-6,5.7q-16.07.11-32.14,0c-3.79,0-6.1-2.22-6.14-5.55-.05-3.51,2.26-5.62,6.35-5.67C282.16,471.87,287.52,471.91,292.87,471.91Z" transform="translate(-105.56 -246.23)"/>
+                                        </svg>
+                                   </div>
+                                    
+                                    <h6 class="fw-bold">Déploiement</h6>
+                                    <p class="m-0">Votre site est mis en ligne avec la configuration
+                                        de votre hébergement web et nom de domaines.</p>
+                                </div>
+                            </div>
+                            <div class="position-absolute elementCache"></div>
+                        </div>
+                        <div class="element">
+                            <div class=" text-white m-0 h-100 d-flex flex-column justify-content-center align-items-center blElement">
+                                <div class="bl2Element ">
+                                    <div class="d-flex justify-content-center">
+                                        <svg id="Calque_1" data-name="Calque 1" style="width: 35%;margin-top: 5vmin;" viewBox="0 0 384 384"><defs><style>.cls-1{fill:#fff;}</style></defs><title>optimisation</title>
+                                            <path class="cls-1" d="M389.14,612.94h-183c-1-.41-2.06-.83-3.11-1.22-7.06-2.65-11.28-7.82-12.4-15.13s1.31-13.21,7.08-17.89c4.84-3.92,10.44-4.26,16.28-4.16,6.82.11,13.65,0,20.62,0,3.53-19.4,7-38.36,10.48-57.63h-4.83c-34,0-68,.06-102,0-18.48,0-32.54-13.75-32.56-32q-.15-111.93.1-223.86a33.21,33.21,0,0,1,3.27-14c6.07-12.4,16.58-18.05,30.32-18q158.25,0,316.49,0c1.12,0,2.25,0,3.37.06,9.15.65,17.23,4,22.63,11.46,3.33,4.62,5.22,10.27,7.76,15.46v234c-.2.31-.51.59-.57.92-3,16-17.34,26.4-33.94,26.19-33.49-.41-67-.12-100.48-.12h-4.47l10.53,57.73c9,0,17.6-.24,26.2.05,11.87.41,20.2,11.78,17.45,23.34C402.41,606.22,396.75,610.57,389.14,612.94ZM118.42,452.54H476.74c.05-1.07.12-1.81.12-2.55q0-93.74,0-187.47c0-12.87-8.22-20.79-21.36-20.79q-157.85,0-315.69,0a28.19,28.19,0,0,0-7.76,1c-8.73,2.54-13.6,10-13.61,20.49q0,92.81,0,185.59Zm0,13.5c0,6.68-.21,12.93.1,19.16a21.68,21.68,0,0,0,2.14,8.24c4,8.17,11.2,10.75,19.82,10.75q157.12,0,314.25,0c.87,0,1.75,0,2.62,0,9.44-.53,17.29-6.08,18.57-14.54,1.15-7.68.86-15.58,1.22-23.57ZM347.14,574.57a26.71,26.71,0,0,0-.15-3.06c-3.15-17.17-6.37-34.31-9.4-51.5-.4-2.29-1-3.14-3.45-3.13q-36.54.12-73.1,0c-2.15,0-2.93.6-3.32,2.84-2,11.92-4.34,23.79-6.5,35.68-1.14,6.23-2.18,12.46-3.35,19.15h20.27c7.75,0,15.5-.06,23.24.11a6,6,0,0,1,6.22,6.14,6.41,6.41,0,0,1-6,6.52,29.07,29.07,0,0,1-3.37.07h-76.1a20.87,20.87,0,0,0-3.36.08,6.1,6.1,0,0,0-5.51,5.75,5.78,5.78,0,0,0,4.57,6.43,18.85,18.85,0,0,0,4.81.48q84.9,0,169.81,0c1.61,0,3.4.13,4.78-.5a8.88,8.88,0,0,0,4.06-3.45c2.31-4.39-1-8.76-6.58-8.77-17.86,0-35.73,0-53.6,0-4.93,0-8-2.61-7.92-6.56s2.93-6.2,7.76-6.26C336.22,574.52,341.45,574.57,347.14,574.57Z" transform="translate(-105.63 -228.95)"/>
+                                            <path class="cls-1" d="M195.71,414.61c-20.33-57.29,8.06-106.55,41.08-128.74a109.9,109.9,0,0,1,121.7,0c33.05,22.21,61.41,71.47,41.16,128.51,3.48,0,6.79-.06,10.09,0a18.85,18.85,0,0,1,5.16.62,6.25,6.25,0,0,1,0,11.84,17.84,17.84,0,0,1-5.16.61q-112.1,0-224.17,0a20.16,20.16,0,0,1-3.73-.24c-3.69-.68-5.68-3-5.69-6.31a5.85,5.85,0,0,1,5.68-6.25C186.27,414.32,190.77,414.61,195.71,414.61Zm32.4-.24a11.76,11.76,0,0,0-.42-2.15c-4.35-9.83-6.92-20.13-6.62-30.84A189.53,189.53,0,0,1,223.65,358c.55-3.56,4-5.34,7.39-4.71s5.18,3.12,5.05,6.81a16.53,16.53,0,0,1-.43,2.95c-3.74,17-1.95,33.23,6.21,48.66.56,1.05,1.76,2.49,2.69,2.5,10.06.18,20.13.12,30.38.12-.2-.78-.25-1.15-.38-1.47-4.73-11.39-2.93-21.66,5.95-30.18,18.38-17.64,37-35.09,55.55-52.52a122.15,122.15,0,0,1,10.82-8.63c2.18-1.62,4.5-1.1,6.57.5s3.06,3.48,2.1,6.19c-1.5,4.22-2.55,8.62-4.29,12.73-9.74,23.09-19.62,46.1-29.45,69.14-.55,1.29-1,2.61-1.63,4.24,10.41,0,20.27.08,30.14-.11,1.05,0,2.47-1.4,3.05-2.5,8.68-16.42,10.22-33.65,5.58-51.54-1.26-4.86.23-8.29,4.06-9.46,3.67-1.12,6.91,1.19,8.29,6a81.2,81.2,0,0,1,.17,44.32c-1.18,4.37-2.81,8.62-4.36,13.3,5.39,0,10.38-.13,15.35.06,2.45.09,3.47-.9,4.3-3.07a98,98,0,0,0,6.45-29.08c1.56-25.91-5.94-48.91-22.9-68.44-20.5-23.59-46.65-34.72-78-33.27a91.59,91.59,0,0,0-56.91,22.78c-21.82,18.8-32.91,42.91-33.65,71.61A87.14,87.14,0,0,0,209,412.15a3.77,3.77,0,0,0,2.47,2.12C217,414.47,222.43,414.37,228.11,414.37Zm69.52-.05a12.59,12.59,0,0,0,12.74-12.86,12.74,12.74,0,1,0-12.74,12.86ZM333.45,351l-.62-.51L305,376.36l13.8,9.48Z" transform="translate(-105.63 -228.95)"/>
+                                            <path class="cls-1" d="M297.62,478.59c4.11,0,8.23-.09,12.34,0s6.91,2.77,6.93,6.32-2.82,6.38-6.89,6.43q-12.33.18-24.68,0c-4.08-.06-6.91-2.84-6.93-6.4s2.79-6.14,6.89-6.38l.75,0h11.59Z" transform="translate(-105.63 -228.95)"/>
+                                            <path class="cls-1" d="M297.47,299.44a73.81,73.81,0,0,1,27.06,5c4.22,1.62,6,4.82,4.72,8.39s-4.59,5.29-8.82,3.77c-11.41-4.1-23.09-5.84-34.89-2.82-6.92,1.77-13.5,4.91-20.14,7.67-2.65,1.1-5.34,1.74-7.27-.4a8.74,8.74,0,0,1-2.28-6.17c.24-1.81,2.17-3.9,3.91-4.95A72.81,72.81,0,0,1,297.47,299.44Z" transform="translate(-105.63 -228.95)"/>
+                                        </svg>   
+                                    </div>
+                                    <h6 class="fw-bold">Optimisation</h6>
+                                    <p class="m-0">Notre équipe teste votre site web pour corriger
+                                        d'éventuel bug, mais aussi pour augmenter les 
+                                        performances de votre site et vous garantir
+                                        un meilleur référencement.</p>
+                                </div>
+                            </div>
+                            <div class="position-absolute elementCache"></div>
+                        </div>
+                        <div class="element">
+                            <div class=" text-white m-0 h-100 d-flex flex-column justify-content-center align-items-center blElement">
+                                <div class="bl2Element ">
+                                    <div class="d-flex justify-content-center">
+                                        <svg id="Calque_1" data-name="Calque 1" style="width: 35%;margin-top: 5vmin;" viewBox="0 0 384.15 380.33"><defs><style>.cls-1{fill:#fff;}</style></defs><title>livraison</title>
+                                            <path class="cls-1" d="M489.71,332.45V390.2a3.18,3.18,0,0,0-.68.8c-3.83,10.55-10.23,15.09-21.43,15.16-2.46,0-4.92,0-7.76,0v5.29c0,59-.17,118,.13,177,.06,12.58-8.76,22.7-22.68,22.67q-139.5-.29-279-.13a29.75,29.75,0,0,1-7.78-.83c-9.63-2.64-14.93-10.37-14.93-21.54q0-88.68,0-177.36v-5.12c-3.65,0-6.75.11-9.85,0-11.72-.51-20-9.12-20-20.87,0-15.38.45-30.77-.16-46.12-.47-11.74,8.19-23.1,22.64-22.67,15.48.46,31,.11,46.49.1h4.49c-1.35-1.73-2.12-2.7-2.87-3.68-9.41-12.43-13-26.51-10.08-41.69,6.49-33.69,42.67-50.34,72.81-33.84,8.32,4.55,16.55,9.27,24.77,14a83.58,83.58,0,0,1,31.91,32.46c.57,1,1.23,2,1.85,3,.39-.24.53-.27.58-.36.57-1,1.14-1.93,1.69-2.91A81.21,81.21,0,0,1,329,252.93c9.61-5.8,19.44-11.25,29.33-16.58a45.47,45.47,0,0,1,30.52-4.74c33.22,6.26,50.54,39.85,36.44,70.6-2.24,4.9-5.41,9.37-8.33,14.34h4.09c15.75,0,31.5-.06,47.24,0,10.47.06,17.09,4.89,20.64,14.71A6.09,6.09,0,0,0,489.71,332.45ZM336.26,593.78H436.63c5.53,0,6-.47,6-6V406.52H336.39v25.6h4.33c9.12,0,18.24,0,27.36,0,3.24,0,5.88,1.07,7.67,3.82a8,8,0,0,1,.51,8.53,8.74,8.74,0,0,1-8.28,4.84c-9.24.06-18.49,0-27.74,0-1.3,0-2.61.13-4,.21ZM153,406.41c-.07,1.32-.16,2.31-.16,3.3q0,89.39,0,178.78c0,4.67.62,5.28,5.54,5.28h96.7c1.32,0,2.63-.15,4.05-.24V449.34h-4.22c-9.62,0-19.24,0-28.86,0-6.42,0-10.44-3.44-10.4-8.74s3.88-8.44,10.17-8.46c9.74,0,19.49,0,29.23,0h4.07V406.41ZM276.76,334V593.45h41.92V334Zm-17.64.08c-1.14-.11-2.1-.28-3.06-.28H127.86c-4.32,0-5,.69-5,5.1q0,21.92,0,43.85c0,5.87.33,6.22,6.1,6.22H255c1.34,0,2.67-.12,4.17-.18Zm77.19,54.59c1.14.11,2.1.29,3.06.29q64.1,0,128.2,0c4.3,0,4.95-.72,5-5.1q0-21.93,0-43.86c0-5.88-.31-6.21-6.11-6.21H336.31Zm-47.65-72.09c-3.34-21.63-13.69-38.07-31.83-49.31-8.68-5.38-17.63-10.35-26.68-15.1C218,245.74,206,246.68,195,254.88s-14.21,19.92-11.55,33c3.55,17.43,17.78,28.53,36.11,28.65,18,.11,36,0,53.93,0Zm18.25-.31a12.23,12.23,0,0,0,1.72.29c22.85,0,45.7.39,68.54-.1s38.35-19.32,35.3-41.74c-2.86-20.95-27.32-33-46.71-22.85-6.84,3.57-13.6,7.35-20.18,11.39-5.93,3.64-12,7.22-17.22,11.8C316.06,285.9,309.07,299.81,306.91,316.24Z" transform="translate(-105.56 -230.78)"/>
+                                            <path class="cls-1" d="M409.7,432.14c5.18,0,8.8,3.56,8.79,8.54a8.64,8.64,0,0,1-8.84,8.64,8.93,8.93,0,0,1-9.09-8.88C400.69,435.62,404.55,432.11,409.7,432.14Z" transform="translate(-105.56 -230.78)"/><path class="cls-1" d="M192.14,440.68a8.65,8.65,0,0,1-8.85,8.64c-5,0-9.27-4.09-9.13-8.87s4.05-8.35,9.16-8.32S192.15,435.72,192.14,440.68Z" transform="translate(-105.56 -230.78)"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="fw-bold">Livraison Final</h6>
+                                    <p class="m-0">Enfin votre site web et prêt et opérationnel !
+                                        Fiable, efficace et fait avec passion, mais
+                                        ne nous inquiétez pas notre collaboration ne 
+                                        ne s'arrête pas là, nous vous suivons de près
+                                        pour que votre site web reste opérationnel.</p>
+                                </div>
+                            </div>
+                            <div class="position-absolute elementCache"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="bg-white position-relative d-flex" style="height: 100vh;width: 100%;transition: transform 1s linear;">
+
+           
+        <button id="gauche" class="position-sticky  position-absolute" style="z-index: 3;height: 50px;margin-top: 42vh;background: none;border:none;font-size: 5vmin;padding-left: 2vmin;"> <i class="fas fa-chevron-left"></i> </button>
+        <button id="prev" class="position-sticky  position-absolute" style="z-index: 3;margin-top: 42vh;;height: 50px;left:100%;background: none;border:none;font-size: 5vmin;padding-right: 2vmin;"> <i class="fas fa-chevron-right"></i> </button>
+
+            <div class="row m-0 justify-content-between position-absolute" id="firstC">
+                <div class="col-4 d-flex flex-column justify-content-end " >
+                   
+                    <div style="top:20%;padding-left: 14vmin;z-index: 1;" class="position-absolute d-flex align-items-end panel__content">
+                        <span class="fw-bold" style="margin-bottom: 1.7vmin;font-size: 3vmin;">01.</span>
+                        <div class="" style="overflow: hidden;">
+                            <div class="titreProjet">
+                                <h4 class="fw-bold m-0" style="font-size: 18vmin;color: black;font-family: playfairRegule;margin-left: 2vmin!important">Projet n°1</h4>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="apparitionProjetO" style="font-size: 2.2vmin;margin-bottom: 10vmin;font-family: playfairRegule;padding: 0 10vmin 0 14vmin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quis pariatur, voluptatum vitae doloremque at explicabo vero cumque ea sequi rerum quas facere libero unde fugit tenetur! Similique, commodi esse.
+                   </p>
+                    <div style="padding: 0 14vmin 14vmin 14vmin;">
+                        <a class="bg-dark text-white rounded fw-bold apparitionProjetO" style="width: fit-content;padding: 1.2vmin 8vmin;font-size: 2.6vmin;">Découvrir.</a>
+                    </div>
+                </div>
+                <div class="col-4 d-flex align-items-center panel__img-col" style="margin-left: 6vmin;flex-basis: 34%;">
+                    <img class="w-100 " src="./assets/img/reed-geiger-J13dJKbkdyg-unsplash(2).jpg" style="height: 90%!important;">
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center " style="font-size: 2.5vmin;margin-right: 7vmin;">
+                    <div  style="width: 60%;overflow: hidden;">
+                        <div class="d-flex flex-column ">
+                            <span class="fw-bold titreProjet">Style</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">Site vitrine</span>
+                        </div>
+                        
+                    
+                    </div>
+                    <div  style="width: 60%;margin: 4vmin 0;overflow: hidden;">
+                        <div class="d-flex flex-column">
+                            <span class="fw-bold titreProjet">Délais</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">3 semaines</span>
+                        </div>
+                        
+                    
+                    </div>
+                    <div  style="width: 60%;overflow: hidden;">
+                        <div class="d-flex flex-column">
+                            <span class="fw-bold titreProjet">Technologie</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">Wordpress, Html, Css, Javascript</span>
+                        </div>
+                        
+                    
+                    </div>
+                 
+                </div>
+            </div>
+
+            <div class="row m-0 justify-content-between position-absolute" style="transform: translateX(-1800px);"  id="secondC">
+                <div class="col-4 d-flex flex-column justify-content-end " >
+                   
+                    <div style="top:20%;padding-left: 14vmin;z-index: 1;" class="position-absolute d-flex align-items-end panel__content">
+                        <span class="fw-bold" style="margin-bottom: 1.7vmin;font-size: 3vmin;">02.</span>
+                        <div class="" style="overflow: hidden;">
+                            <div class="titreProjet">
+                                <h4 class="fw-bold m-0" style="font-size: 18vmin;color: black;font-family: playfairRegule;margin-left: 2vmin!important">Projet n°2</h4>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="apparitionProjetO" style="font-size: 2.2vmin;margin-bottom: 10vmin;font-family: playfairRegule;padding: 0 10vmin 0 14vmin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quis pariatur, voluptatum vitae doloremque at explicabo vero cumque ea sequi rerum quas facere libero unde fugit tenetur! Similique, commodi esse.
+                   </p>
+                    <div style="padding: 0 14vmin 14vmin 14vmin;">
+                        <a class="bg-dark text-white rounded fw-bold apparitionProjetO" style="width: fit-content;padding: 1.2vmin 8vmin;font-size: 2.6vmin;">Découvrir.</a>
+                    </div>
+                </div>
+                <div class="col-4 d-flex align-items-center panel__img-col" style="margin-left: 6vmin;flex-basis: 34%;">
+                    <img class="w-100 " src="./assets/img/reed-geiger-J13dJKbkdyg-unsplash(2).jpg" style="height: 90%!important;">
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center " style="font-size: 2.5vmin;margin-right: 7vmin;">
+                    <div  style="width: 60%;overflow: hidden;">
+                        <div class="d-flex flex-column ">
+                            <span class="fw-bold titreProjet">Style</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">Site vitrine</span>
+                        </div>
+                        
+                    
+                    </div>
+                    <div  style="width: 60%;margin: 4vmin 0;overflow: hidden;">
+                        <div class="d-flex flex-column">
+                            <span class="fw-bold titreProjet">Délais</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">3 semaines</span>
+                        </div>
+                        
+                    
+                    </div>
+                    <div  style="width: 60%;overflow: hidden;">
+                        <div class="d-flex flex-column">
+                            <span class="fw-bold titreProjet">Technologie</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">Wordpress, Html, Css, Javascript</span>
+                        </div>
+                        
+                    
+                    </div>
+                 
+                </div>
+            </div>
+
+            <div class="row m-0 justify-content-between position-absolute" style="transform: translateX(-1800px);"  id="thirdC">
+                <div class="col-4 d-flex flex-column justify-content-end " >
+                   
+                    <div style="top:20%;padding-left: 14vmin;z-index: 1;" class="position-absolute d-flex align-items-end panel__content">
+                        <span class="fw-bold" style="margin-bottom: 1.7vmin;font-size: 3vmin;">03.</span>
+                        <div class="" style="overflow: hidden;">
+                            <div class="titreProjet">
+                                <h4 class="fw-bold m-0" style="font-size: 18vmin;color: black;font-family: playfairRegule;margin-left: 2vmin!important">Projet n°3</h4>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="apparitionProjetO" style="font-size: 2.2vmin;margin-bottom: 10vmin;font-family: playfairRegule;padding: 0 10vmin 0 14vmin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quis pariatur, voluptatum vitae doloremque at explicabo vero cumque ea sequi rerum quas facere libero unde fugit tenetur! Similique, commodi esse.
+                   </p>
+                    <div style="padding: 0 14vmin 14vmin 14vmin;">
+                        <a class="bg-dark text-white rounded fw-bold apparitionProjetO" style="width: fit-content;padding: 1.2vmin 8vmin;font-size: 2.6vmin;">Découvrir.</a>
+                    </div>
+                </div>
+                <div class="col-4 d-flex align-items-center panel__img-col" style="margin-left: 6vmin;flex-basis: 34%;">
+                    <img class="w-100 " src="./assets/img/reed-geiger-J13dJKbkdyg-unsplash(2).jpg" style="height: 90%!important;">
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center " style="font-size: 2.5vmin;margin-right: 7vmin;">
+                    <div  style="width: 60%;overflow: hidden;">
+                        <div class="d-flex flex-column ">
+                            <span class="fw-bold titreProjet">Style</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">Site vitrine</span>
+                        </div>
+                        
+                    
+                    </div>
+                    <div  style="width: 60%;margin: 4vmin 0;overflow: hidden;">
+                        <div class="d-flex flex-column">
+                            <span class="fw-bold titreProjet">Délais</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">3 semaines</span>
+                        </div>
+                        
+                    
+                    </div>
+                    <div  style="width: 60%;overflow: hidden;">
+                        <div class="d-flex flex-column">
+                            <span class="fw-bold titreProjet">Technologie</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">Wordpress, Html, Css, Javascript</span>
+                        </div>
+                        
+                    
+                    </div>
+                 
+                </div>
+            </div>
+
+            <div class="row m-0 justify-content-between position-absolute" style="transform: translateX(-1800px);"  id="fourC">
+                <div class="col-4 d-flex flex-column justify-content-end " >
+                   
+                    <div style="top:20%;padding-left: 14vmin;z-index: 1;" class="position-absolute d-flex align-items-end panel__content">
+                        <span class="fw-bold" style="margin-bottom: 1.7vmin;font-size: 3vmin;">04.</span>
+                        <div class="" style="overflow: hidden;">
+                            <div class="titreProjet">
+                                <h4 class="fw-bold m-0" style="font-size: 18vmin;color: black;font-family: playfairRegule;margin-left: 2vmin!important">Projet n°4</h4>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <p class="apparitionProjetO" style="font-size: 2.2vmin;margin-bottom: 10vmin;font-family: playfairRegule;padding: 0 10vmin 0 14vmin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quis pariatur, voluptatum vitae doloremque at explicabo vero cumque ea sequi rerum quas facere libero unde fugit tenetur! Similique, commodi esse.
+                   </p>
+                    <div style="padding: 0 14vmin 14vmin 14vmin;">
+                        <a class="bg-dark text-white rounded fw-bold apparitionProjetO" style="width: fit-content;padding: 1.2vmin 8vmin;font-size: 2.6vmin;">Découvrir.</a>
+                    </div>
+                </div>
+                <div class="col-4 d-flex align-items-center panel__img-col" style="margin-left: 6vmin;flex-basis: 34%;">
+                    <img class="w-100 " src="./assets/img/reed-geiger-J13dJKbkdyg-unsplash(2).jpg" style="height: 90%!important;">
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center " style="font-size: 2.5vmin;margin-right: 7vmin;">
+                    <div  style="width: 60%;overflow: hidden;">
+                        <div class="d-flex flex-column ">
+                            <span class="fw-bold titreProjet">Style</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">Site vitrine</span>
+                        </div>
+                        
+                    
+                    </div>
+                    <div  style="width: 60%;margin: 4vmin 0;overflow: hidden;">
+                        <div class="d-flex flex-column">
+                            <span class="fw-bold titreProjet">Délais</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">3 semaines</span>
+                        </div>
+                        
+                    
+                    </div>
+                    <div  style="width: 60%;overflow: hidden;">
+                        <div class="d-flex flex-column">
+                            <span class="fw-bold titreProjet">Technologie</span>
+                            <div class="ligne" style="height: 0.3vmin;background-color: #DEE2E6;"></div>
+                            <span class="titreProjet" style="margin-top: 1vmin;">Wordpress, Html, Css, Javascript</span>
+                        </div>
+                        
+                    
+                    </div>
+                 
+                </div>
+            </div>
+
+           <!-- <div class="row m-0 justify-content-between">
+                <div class="col-4 d-flex flex-column justify-content-end " >
+                    
+                    <div style="top:24%;padding-left: 14vmin;z-index: 1;" class="position-absolute d-flex align-items-end panel__content">
+                        <span class="fw-bold" style="margin-bottom: 1.7vmin;font-size: 3vmin;">01.</span>
+                        <h4 class="fw-bold m-0" style="font-size: 18vmin;color: black;font-family: playfairRegule;margin-left: 2vmin!important">Projet n°3</h4>
+                    </div>
+                    <p style="font-size: 2.2vmin;margin-bottom: 7vmin;font-family: playfairRegule;padding: 0 0 0 14vmin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quis pariatur, voluptatum vitae doloremque at explicabo vero cumque ea sequi rerum quas facere libero unde fugit tenetur! Similique, commodi esse.
+                    Animi deleniti magnam doloribus neque ddddddd</p>
+                    <div style="padding: 0 14vmin 14vmin 14vmin;">
+                        <a class="bg-dark text-white rounded fw-bold" style="width: fit-content;padding: 1.2vmin 8vmin;font-size: 2.6vmin;">Découvrir.</a>
+                    </div>
+                </div>
+                <div class="col-4 d-flex align-items-center panel__img-col" style="margin-left: 6vmin;flex-basis: 34%;">
+                    <img class="w-100 " src="./assets/img/reed-geiger-J13dJKbkdyg-unsplash(2).jpg" style="height: 90%!important;">
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center align-items-center " style="font-size: 2.5vmin;margin-right: 7vmin;">
+                    <div class="d-flex flex-column" style="width: 60%;margin: 4vmin 0;">
+                        <span class="fw-bold border-bottom">Style</span>
+                        <span>Site vitrine</span>
+                    
+                    </div>
+                    <div class="d-flex flex-column" style="width: 60%;margin-bottom: 4vmin ">
+                        <span class="fw-bold border-bottom">Délais</span>
+                        <span>3 semaines</span>
+                    
+                    </div>
+                    <div class="d-flex flex-column" style="width: 60%;">
+                        <span class="fw-bold border-bottom">Technologie</span>
+                        <span>Wordpress, Html, Css, Javascript</span>
+                    </div>
+                </div>
+            </div>-->
+        </section>
+        
+        <!-- Formulaire de contact -->
+        <section id="blocFormulaire" class=" d-flex m-0 p-0 justify-content-center">
+            <div class=" d-flex align-items-center justify-content-md-center justify-content-around formulaireContact flex-column flex-md-row">
+                <div>
+                    <h2 class="d-block d-md-none text-white titleContact">Contactez</h2>
+                    <div class="d-flex align-items-center d-md-none  ms-1 text-white">
+                        <div class="bg-white ecart"></div> 
+                        <h2 class="m-0 ms-1 sTitleContact">nous</h2>
+                    </div>
+                </div>
+                <form class="d-flex flex-column" id="formulaire" onsubmit="return false">
+                    <input class="border-bottom  border-3 text-white" type="text" placeholder="Votre nom" id="nom">
+                    <input class="inputMarge0 border-bottom border-white text-white border-3 " type="text" placeholder="Votre mail" id="mail">
+                    <input class="border-bottom border-white text-white border-3 " type="text" placeholder="Votre numero" id="telephone">
+                    <input class="inputMarge1 border-bottom border-white text-white border-3 " type="text" placeholder="Votre message" id="message">
+                    <!--<button id="buttonFormulaire"class="fw-bold rounded-3 border-0">Envoyer</button>-->
+                    <button id="buttonFormulaire" class="order bg-white rounded-3 border-0"><span class="default fw-bold">Envoyer</span>
+                    <span class="success fw-bold"></span>
+                    <div class="box"></div>
+                    <div class="drone">
+                        <svg class="wing left">
+                        <use xlink:href="#droneWing"></use>
+                        </svg>
+                        <svg class="wing right">
+                        <use xlink:href="#droneWing"></use>
+                        </svg>
+                        <svg class="body">
+                        <use xlink:href="#droneBody"></use>
+                        </svg>
+                        <svg class="grab">
+                        <use xlink:href="#droneGrab"></use>
+                        </svg>
+                    </div>
+                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 14" id="droneBody" fill="currentColor" stroke="none">
+                        <path d="M38,0.5 C38,0.223857625 38.2238576,5.07265313e-17 38.5,0 C38.7761424,-5.07265313e-17 39,0.223857625 39,0.5 L39,4 C39.5522847,4 40,4.44771525 40,5 L40,6 L40.5,6 C41.3284271,6 42,6.67157288 42,7.5 C42,8.32842712 41.3284271,9 40.5,9 L30,9 L30,9.86761924 C30,10.5701449 29.6314023,11.2211586 29.0289915,11.5826051 L25.4750236,13.7149859 C25.1641928,13.9014843 24.80852,14 24.4460321,14 L17.5539679,14 C17.19148,14 16.8358072,13.9014843 16.5249764,13.7149859 L12.9710085,11.5826051 C12.3685977,11.2211586 12,10.5701449 12,9.86761924 L12,9 L1.5,9 C0.671572875,9 1.01453063e-16,8.32842712 0,7.5 C-1.01453063e-16,6.67157288 0.671572875,6 1.5,6 L2,6 L2,5 C2,4.44771525 2.44771525,4 3,4 L3,0.5 C3,0.223857625 3.22385763,5.07265313e-17 3.5,0 C3.77614237,-5.07265313e-17 4,0.223857625 4,0.5 L4,4 C4.55228475,4 5,4.44771525 5,5 L5,6 L12.005,6 L12.0064818,5.97128221 C12.0580908,5.33141252 12.414937,4.75103782 12.9710085,4.41739491 L16.5249764,2.28501415 C16.8358072,2.09851567 17.19148,2 17.5539679,2 L24.4460321,2 C24.80852,2 25.1641928,2.09851567 25.4750236,2.28501415 L29.0289915,4.41739491 C29.5934099,4.75604592 29.952577,5.34889137 29.9956355,6.0001358 L37,6 L37,5 C37,4.44771525 37.4477153,4 38,4 L38,0.5 Z"></path>
+                    </symbol>
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 14" id="droneGrab" fill="none" stroke="currentColor">
+                        <path d="M5,13 L1,13 C1,7.66666667 3.33333333,3.66666667 8,1 L17.996238,1 C22.6654127,3 25,7 25,13 L21.0005587,13" stroke-width="2" stroke-linecap="round"></path>
+                    </symbol>
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 2" id="droneWing" fill="currentColor" stroke="none">
+                        <path d="M13,2 C12.4477153,2 12,1.55228475 12,1 C12,0.44771525 12.4477153,0 13,0 C13.5522847,0 21,0.44771525 21,1 C21,1.55228475 13.5522847,2 13,2 Z"></path>
+                        <path d="M8,2 C7.44771525,2 0,1.55228475 0,1 C0,0.44771525 7.44771525,0 8,0 C8.55228475,0 9,0.44771525 9,1 C9,1.55228475 8.55228475,2 8,2 Z"></path>
+                    </symbol>
+                    </svg>
+                </form>
+                <div class="d-flex flex-column d-md-none text-white align-items-end" >
+                    <p>contact@paradoxe.fr <i class="far fa-envelope ms-2 iconeFor"></i></p>
+                    <p>06 52 57 65 67 <i class="fas fa-phone ms-2 iconeFor"></i></p>
+                </div>
+            </div>
+            <div class=" text-white position-relative d-md-flex flex-column align-items-center justify-content-center d-none">
+                <svg id="eU6SWpw9GOx1" class="position-absolute animePath" viewBox="1600 -140 8000 4500" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                    <path d="M4796.16127,2740.724855C3473.877201,1386.798703,5629.651709,-406.19691,6658.696119,1515.119022c642.156352,1198.962084-165.096934,2367.755714-607.977697,2258.202874s-866.846753-675.367001-1254.557152-1032.597041Z"  fill="none" stroke="#fff" stroke-width="18"/>
+                </svg>            
+                <h2 class="titleContactDes">Contactez</h2>
+                <div class="d-flex align-items-center ms-1">
+                    <div class="bg-white ecartDes"></div> 
+                    <h2 class="m-0 ms-1 titleContactDes1">nous</h2>
+                </div>
+                <div class="d-flex flex-column align-items-end forAdresse">
+                    <p class="my-4 fw-bold">contact@paradoxe.fr <i class="far fa-envelope ms-2"></i></p>
+                    <p class="fw-bold">06 52 57 65 67 <i class="fas fa-phone ms-2"></i></p>
+                </div>
+                <div class="position-absolute fw-bold  textMaquette blQuestion">
+                    <p class="m-0">Une question, un projet ? Contactez notre agence et nous vous répondrons dans les meilleurs délais.</p>
+                </div>
+            </div> 
+        </section>  
+        
+     
+        
+        
+    <!--<button class="order bg-white rounded-3 border-0"><span class="default fw-bold">Envoyer</span><span class="success fw-bold">Order Placed
+        <svg viewbox="0 0 12 10">
+        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+        </svg></span>
+    <div class="box"></div>
+    <div class="drone">
+        <svg class="wing left">
+        <use xlink:href="#droneWing"></use>
+        </svg>
+        <svg class="wing right">
+        <use xlink:href="#droneWing"></use>
+        </svg>
+        <svg class="body">
+        <use xlink:href="#droneBody"></use>
+        </svg>
+        <svg class="grab">
+        <use xlink:href="#droneGrab"></use>
+        </svg>
+    </div>
+    </button>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 14" id="droneBody" fill="currentColor" stroke="none">
+        <path d="M38,0.5 C38,0.223857625 38.2238576,5.07265313e-17 38.5,0 C38.7761424,-5.07265313e-17 39,0.223857625 39,0.5 L39,4 C39.5522847,4 40,4.44771525 40,5 L40,6 L40.5,6 C41.3284271,6 42,6.67157288 42,7.5 C42,8.32842712 41.3284271,9 40.5,9 L30,9 L30,9.86761924 C30,10.5701449 29.6314023,11.2211586 29.0289915,11.5826051 L25.4750236,13.7149859 C25.1641928,13.9014843 24.80852,14 24.4460321,14 L17.5539679,14 C17.19148,14 16.8358072,13.9014843 16.5249764,13.7149859 L12.9710085,11.5826051 C12.3685977,11.2211586 12,10.5701449 12,9.86761924 L12,9 L1.5,9 C0.671572875,9 1.01453063e-16,8.32842712 0,7.5 C-1.01453063e-16,6.67157288 0.671572875,6 1.5,6 L2,6 L2,5 C2,4.44771525 2.44771525,4 3,4 L3,0.5 C3,0.223857625 3.22385763,5.07265313e-17 3.5,0 C3.77614237,-5.07265313e-17 4,0.223857625 4,0.5 L4,4 C4.55228475,4 5,4.44771525 5,5 L5,6 L12.005,6 L12.0064818,5.97128221 C12.0580908,5.33141252 12.414937,4.75103782 12.9710085,4.41739491 L16.5249764,2.28501415 C16.8358072,2.09851567 17.19148,2 17.5539679,2 L24.4460321,2 C24.80852,2 25.1641928,2.09851567 25.4750236,2.28501415 L29.0289915,4.41739491 C29.5934099,4.75604592 29.952577,5.34889137 29.9956355,6.0001358 L37,6 L37,5 C37,4.44771525 37.4477153,4 38,4 L38,0.5 Z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 14" id="droneGrab" fill="none" stroke="currentColor">
+        <path d="M5,13 L1,13 C1,7.66666667 3.33333333,3.66666667 8,1 L17.996238,1 C22.6654127,3 25,7 25,13 L21.0005587,13" stroke-width="2" stroke-linecap="round"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 2" id="droneWing" fill="currentColor" stroke="none">
+        <path d="M13,2 C12.4477153,2 12,1.55228475 12,1 C12,0.44771525 12.4477153,0 13,0 C13.5522847,0 21,0.44771525 21,1 C21,1.55228475 13.5522847,2 13,2 Z"></path>
+        <path d="M8,2 C7.44771525,2 0,1.55228475 0,1 C0,0.44771525 7.44771525,0 8,0 C8.55228475,0 9,0.44771525 9,1 C9,1.55228475 8.55228475,2 8,2 Z"></path>
+    </symbol>
+    </svg>-->
+
+        
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+        <script src="./assets/js/animationAccueil.js"></script>
+        <script src="./assets/js/formulaire.js"></script>
+    </body>
+</html>
