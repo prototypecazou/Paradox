@@ -4,9 +4,9 @@ var four = document.getElementById('horizontalScroll');
 var three = document.getElementById('rutur');
 /*var horizontal= document.querySelector(".horizontal-section")
 horizontal.style.background="linear-gradient(#ffffff,#ffffff,#ffffff, #ffffff)"*/
-/*if(parseInt(window.location.hash.charAt(1)) >= 1){
+if(parseInt(window.location.hash.charAt(1)) >= 1){
 	window.location.replace("")
-}*/
+}
 
 
 
@@ -22,7 +22,7 @@ window.onload = function(){
 				document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
 	var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 	window.onresize = function(){
-		//window.location.replace("")
+		window.location.replace("")
 	}			
 	let done = 8  //Math.round(limit/vh)-1;
 	let clock = 0;
